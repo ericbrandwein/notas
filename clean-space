@@ -1,0 +1,7 @@
+sudo journalctl --vacuum-size=500M
+pamac remove --orphans
+paccache --remove --keep 1
+pamac clean --uninstalled --keep 0
+sudo rm -rfv /var/tmp/*
+rm -rfv "/home/eric/.config/Code - OSS/User/workspaceStorage"
+rm -rfv /home/eric/.cache

@@ -1,0 +1,7 @@
+Agregué `acpi_backlight=vendor` a la línea `GRUB_CMDLINE_LINUX_DEFAULT` en /etc/default/grub,
+como dijo este link: https://bbs.archlinux.org/viewtopic.php?id=233198
+Después corrí `sudo grub-mkconfig -o /boot/grub/grub.cfg`.
+
+Eso no funcionó, así que cambié `vendor` por `native`, y después por `video`, y después por `none`. Ninguno funcionó. Cada uno me agregaba una cosa diferente a `/sys/class/acpi_backlight`.
+
+Probé agregar también el parámetro `acpi_osi=Linux`, `acpi_osi=!Windows 2012`, `acpi_osi=`, como dice en https://wiki.archlinux.org/index.php/intel_graphics. Ninguno funcionó. Me cansé.

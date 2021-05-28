@@ -1,0 +1,11 @@
+# Para recortar un video, se puede ir a vlc y poner grabar
+
+# Ver info del archivo
+ffmpeg -i in.mp4
+
+# Editar bitrate para achicarlo, por ejemplo
+ffmpeg -i in.mp4 -b 8507k out.mp4
+
+# Editar saturacion, etc.
+ffplay -vf eq=brightness=0.06:saturation=2:contrast=1 in.mp4
+ffmpeg -i in.mp4 -vf eq=brightness=0.06:saturation=1.8:contrast=1 -c:a copy out.mp4

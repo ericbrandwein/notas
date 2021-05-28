@@ -1,0 +1,10 @@
+Open the /etc/X11/xorg.conf.d/30-touchpad.conf file, then add the natural scrolling option:
+
+Section "InputClass"                 
+    ...
+    Option "Natural Scrolling" "true"
+    ...
+EndSection
+
+
+https://www.reddit.com/r/ManjaroLinux/comments/bagymb/natural_scrolling_in_manjaro_i3/ekbfn1z/

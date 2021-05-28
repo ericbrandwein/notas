@@ -1,0 +1,6 @@
+Agregué al archivo /etc/pulse/default.pa las líneas
+
+```
+#In order to auto-connect a2dp for some devices
+load-module module-switch-on-connect
+```

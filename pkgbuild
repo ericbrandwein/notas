@@ -1,0 +1,4 @@
+makepkg -sicC
+makepkg --printsrcinfo > .SRCINFO
+namcap -i PKGBUILD
+namcap -i <package.tar.xz>

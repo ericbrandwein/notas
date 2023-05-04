@@ -1,0 +1,1 @@
+Cambiar los valores en /etc/default/keyboard, porque eso es lo que lee LightDM para elegir el keyboard

@@ -5,4 +5,4 @@ pamac clean --uninstalled --keep 0
 sudo rm -rfv /var/tmp/*
 rm -rfv "/home/eric/.config/Code - OSS/User/workspaceStorage"
 rm -rfv /home/eric/.cache
-trash-empty 30 
+trash-empty
